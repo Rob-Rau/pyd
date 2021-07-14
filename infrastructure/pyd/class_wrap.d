@@ -921,7 +921,7 @@ struct OpIndex(index_t...) {
                 alias Overloads[0] FN;
             }else{
                 template IsDesiredOverload(alias fn) {
-                    enum bool IsDesiredOverload = is(ParameterTypeTuple!fn == index_t);
+                    enum bool IsDesiredOverload = is(FunctionTypeOf!(fn) == index_t[0]);
                 }
                 alias Filter!(IsDesiredOverload, Overloads) Overloads1;
                 static assert(Overloads1.length == 1,
