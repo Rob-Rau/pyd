@@ -578,6 +578,7 @@ T python_to_d(T) (PyObject* o) {
             return *get_d_reference!(T*)(o);
         }
         // or struct is wrapped range
+        /+
         if(PyObject_IsInstance(o,
                     cast(PyObject*)&PydTypeObject!(RangeWrapper*))) {
             RangeWrapper* wrapper = get_d_reference!(RangeWrapper*)(o);
@@ -588,6 +589,7 @@ T python_to_d(T) (PyObject* o) {
             T t = *cast(T*) wrapper.range;
             return t;
         }
+        +/
         return python_to_d_try_extends!T(o);
     } else static if (isPointer!T && is(PointerTarget!T == struct)) {
         // pointer to struct
