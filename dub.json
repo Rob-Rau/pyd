@@ -2,6 +2,7 @@
 	"authors": [
 		"Kirk McDonald"
 	],
+	"lflags-osx": ["-Wl,-bundle,-undefined,dynamic_lookup"],
 	"configurations": [
 		{
 			"name": "python27",
