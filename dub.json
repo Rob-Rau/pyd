@@ -17,7 +17,7 @@
 			"libs-windows-x86-ldc": [
 				"python27"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python2.7"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -53,7 +53,7 @@
 			"libs-windows-x86-ldc": [
 				"python33"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.3m"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -93,7 +93,7 @@
 			"libs-windows-x86-ldc": [
 				"python34"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.4m"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -134,7 +134,7 @@
 			"libs-windows-x86_mscoff": [
 				"python35"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.5m"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -176,7 +176,7 @@
 			"libs-windows-x86_64": [
 				"python36"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.6m"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -224,7 +224,7 @@
 			"libs-windows-x86_64": [
 				"python37"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.7m"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -273,7 +273,7 @@
 			"libs-windows-x86_64": [
 				"python38"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.8"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -323,7 +323,7 @@
 			"libs-windows-x86_64": [
 				"python39"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.9"
 			],
 			"lflags-windows-x86_64-ldc": [
@@ -374,7 +374,7 @@
 			"libs-windows-x86_64": [
 				"python310"
 			],
-			"libs-posix": [
+			"libs-linux": [
 				"python3.10"
 			],
 			"lflags-windows-x86_64-ldc": [
