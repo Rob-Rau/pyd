@@ -1056,11 +1056,14 @@ if (isArray!T || IsStaticArrayPointer!T) {
             // woohoo! single memcpy
             static if(MatrixInfo!T.isRectArray && isStaticArray!T) {
                 memcpy(_array.ptr, buf.buf.ptr, buf.buf.length);
+                //_array.ptr = buf.buf.ptr;
+                //_array = cast(typeof(_array)) buf.buf.ptr;
             }else{
                 alias MatrixInfo!T.RectArrayType RectArrayType;
                 static if(!isStaticArray!(RectArrayType)) {
-                    ubyte[] dbuf = new ubyte[](buf.buf.length);
-                    memcpy(dbuf.ptr, buf.buf.ptr, buf.buf.length);
+                    ubyte[] dbuf;// = new ubyte[](buf.buf.length);
+                    //memcpy(dbuf.ptr, buf.buf.ptr, buf.buf.length);
+                    dbuf = cast(ubyte[])buf.buf;
                 }
                 size_t rectsize = ME.sizeof;
                 size_t MErectsize = 1;
